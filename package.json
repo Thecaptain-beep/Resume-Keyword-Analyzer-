@@ -1,0 +1,30 @@
+{
+  "name": "resumecheck-app",
+  "version": "1.0.0",
+  "description": "ResumeCheck - AI-Style Resume Keyword Analyzer Full-Stack Web Application",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "server:dev": "npm --prefix server run dev",
+    "client": "npm --prefix client dev",
+    "client:build": "npm --prefix client run build",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run server:dev\" \"npm run client\"",
+    "build": "npm --prefix client run build"
+  },
+  "keywords": [
+    "resume",
+    "keyword-analyzer",
+    "mssql",
+    "express",
+    "react",
+    "framer-motion",
+    "full-stack"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT",
+  "devDependencies": {
+    "canvas": "^3.2.3",
+    "concurrently": "^8.2.2",
+    "docx": "^9.8.1",
+    "puppeteer-core": "^25.12.0"
+  }
+}
